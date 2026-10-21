@@ -1,4 +1,4 @@
-# Bartô — landing page do case
+# Bartho — landing page do case
 
 Página estática feita com HTML, CSS e JavaScript, preparada para publicação no GitHub Pages.
 
@@ -6,7 +6,7 @@ Página estática feita com HTML, CSS e JavaScript, preparada para publicação 
 - `index.html`: conteúdo e estrutura da página.
 - `css/style.css`: identidade visual e responsividade.
 - `js/script.js`: menu mobile e ano do rodapé.
-- `assets/bartho-personagem.png`: personagem do Bartô.
+- `assets/bartho-personagem.png`: personagem do Bartho.
 - `assets/bartho-conversa.png`: captura estática da conversa.
 
 ## Visualizar localmente

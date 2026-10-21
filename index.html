@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#082b55">
+  <meta name="description" content="Bartho — case de produto digital e IA aplicada ao atendimento da Clínica Bem.">
+  <title>Bartho | Case de produto e IA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Bartho, início">
+      <span class="brand-mark">B<span>.</span></span>
+      <span>Bartho <small>CASE DE PRODUTO</small></span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="nav-principal" aria-label="Abrir menu">☰</button>
+    <nav id="nav-principal" class="main-nav" aria-label="Navegação principal">
+      <a href="#contexto">Contexto</a>
+      <a href="#solucao">Solução</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#arquitetura">Tecnologia</a>
+      <a href="#validacao">Validação</a>
+    </nav>
+    <a class="header-cta" href="#aprendizados">Ver aprendizados <span>↘</span></a>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero section-shell" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> PRODUTO DIGITAL · IA APLICADA</p>
+        <h1>Atendimento mais simples.<br><span>Jornadas mais inteligentes.</span></h1>
+        <p class="hero-lead">Bartho é um protótipo de assistente virtual para a Clínica Bem, criado para transformar pedidos em linguagem natural em jornadas de atendimento mais claras e consistentes.</p>
+        <div class="hero-tags">
+          <span>LLM local</span><span>Agentes + ferramentas</span><span>Contexto e memória</span>
+        </div>
+        <a class="button button-primary" href="#contexto">Conheça o projeto <span>↓</span></a>
+        <p class="hero-note">Um case sobre produto, experiência e os desafios de levar IA para um fluxo real.</p>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+        <div class="hero-badge badge-top"><span class="badge-icon">✦</span><span><strong>Linguagem natural</strong><small>Entender a intenção</small></span></div>
+        <img class="hero-character" src="assets/bartho-personagem.png" alt="Personagem Bartho, assistente virtual da Clínica Bem">
+        <div class="hero-badge badge-bottom"><span class="status-dot"></span><span><strong>Protótipo de produto</strong><small>IA + regras de negócio</small></span></div>
+        <span class="hero-spark spark-one">✳</span><span class="hero-spark spark-two">✦</span>
+      </div>
+      <div class="hero-bottom"><span>CASE DE PRODUTO</span><span>01 — VISÃO GERAL</span><span>ROLE PARA EXPLORAR ↓</span></div>
+    </section>
+
+    <section class="intro-band">
+      <div class="section-shell intro-grid">
+        <p class="eyebrow">VISÃO DO PROJETO</p>
+        <h2>Não basta responder.<br><span>É preciso ajudar a resolver.</span></h2>
+        <p>O Bartho explora como um assistente virtual pode orientar pacientes em tarefas administrativas da clínica, mantendo o contexto da conversa e respeitando os limites das informações e ações disponíveis.</p>
+      </div>
+    </section>
+
+    <section class="content-section section-shell" id="contexto">
+      <div class="section-heading">
+        <p class="eyebrow">02 / CONTEXTO E PROBLEMA</p>
+        <h2>Uma conversa pode parecer simples.<br><span>O atendimento, nem sempre.</span></h2>
+        <p>Solicitações chegam de formas diferentes: podem estar incompletas, surgir em várias mensagens ou depender de informações que ainda precisam ser esclarecidas. Isso exige mais do que gerar uma resposta bem escrita.</p>
+      </div>
+      <div class="problem-grid">
+        <article class="problem-card"><span class="card-index">01</span><div class="card-symbol">⌕</div><h3>Entender o pedido</h3><p>Interpretar o que a pessoa precisa mesmo quando ela não fornece todos os dados de uma só vez.</p></article>
+        <article class="problem-card"><span class="card-index">02</span><div class="card-symbol">↔</div><h3>Manter o contexto</h3><p>Conectar informações distribuídas ao longo da conversa sem perder o que já foi informado.</p></article>
+        <article class="problem-card"><span class="card-index">03</span><div class="card-symbol">✓</div><h3>Concluir com segurança</h3><p>Distinguir uma resposta enviada de uma tarefa realmente concluída, sem prometer o que não foi confirmado.</p></article>
+      </div>
+      <div class="insight-callout"><span>INSIGHT</span><p>Uma resposta convincente não garante que a necessidade do paciente foi atendida corretamente.</p></div>
+    </section>
+
+    <section class="solution-section" id="solucao">
+      <div class="section-shell solution-layout">
+        <div class="solution-copy">
+          <p class="eyebrow eyebrow-light">03 / PROPOSTA DE SOLUÇÃO</p>
+          <h2>De uma mensagem solta<br>para uma <span>jornada orientada.</span></h2>
+          <p>O Bartho combina interpretação de linguagem natural, contexto da conversa e regras implementadas no backend para conduzir o usuário ao próximo passo possível.</p>
+          <div class="solution-list">
+            <div><span>01</span><p><strong>Entender</strong><small>Identificar a intenção e os dados que já foram fornecidos.</small></p></div>
+            <div><span>02</span><p><strong>Conduzir</strong><small>Perguntar o que falta e seguir o fluxo adequado.</small></p></div>
+            <div><span>03</span><p><strong>Resolver</strong><small>Responder ou acionar uma funcionalidade disponível, respeitando suas regras.</small></p></div>
+          </div>
+        </div>
+        <div class="solution-panel">
+          <div class="panel-top"><span class="panel-dot"></span><span class="panel-dot"></span><span class="panel-dot"></span><small>JORNADA DO ATENDIMENTO</small></div>
+          <div class="journey-node"><span class="node-icon">✉</span><div><strong>Mensagem do paciente</strong><small>Pedido em linguagem natural</small></div></div>
+          <div class="journey-line"></div>
+          <div class="journey-node"><span class="node-icon node-yellow">⌘</span><div><strong>Interpretação + contexto</strong><small>Intenção, dados e informações anteriores</small></div></div>
+          <div class="journey-line"></div>
+          <div class="journey-node"><span class="node-icon">⚙</span><div><strong>Regras e ferramentas</strong><small>Verificações e ações disponíveis</small></div></div>
+          <div class="journey-line"></div>
+          <div class="journey-node journey-result"><span class="node-icon node-green">✓</span><div><strong>Próximo passo claro</strong><small>Resposta ou ação conforme o fluxo</small></div></div>
+          <p class="panel-caption">Visão conceitual do fluxo — a execução depende da implementação e dos dados disponíveis.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section section-shell" id="funcionalidades">
+      <div class="section-heading">
+        <p class="eyebrow">04 / ESCOPO FUNCIONAL</p>
+        <h2>Feito para apoiar tarefas<br><span>do dia a dia da clínica.</span></h2>
+        <p>O MVP foi construído em torno de jornadas administrativas e informações que ajudam o paciente a avançar no atendimento.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card"><span>01</span><h3>Informações da clínica</h3><p>Apoio a dúvidas administrativas e informações disponíveis na base utilizada pelo assistente.</p><div class="feature-line"></div><small>INFORMAÇÃO</small></article>
+        <article class="feature-card"><span>02</span><h3>Disponibilidade</h3><p>Fluxos para consultar disponibilidade, sujeitos aos dados e às integrações existentes.</p><div class="feature-line"></div><small>CONSULTA</small></article>
+        <article class="feature-card"><span>03</span><h3>Agendamento</h3><p>Coleta progressiva dos dados necessários para conduzir uma solicitação de agendamento.</p><div class="feature-line"></div><small>JORNADA</small></article>
+        <article class="feature-card"><span>04</span><h3>Remarcação e cancelamento</h3><p>Tratamento de intenções de alteração de consulta dentro dos fluxos implementados.</p><div class="feature-line"></div><small>GESTÃO DE CONSULTA</small></article>
+      </div>
+      <p class="scope-note"><strong>Importante:</strong> as funcionalidades representam o escopo explorado no protótipo. A disponibilidade real de cada ação depende da integração, dos dados e das regras configuradas.</p>
+    </section>
+
+    <section class="experience-section" id="experiencia">
+      <div class="section-shell experience-layout">
+        <div class="experience-copy">
+          <p class="eyebrow">05 / EXPERIÊNCIA DO PRODUTO</p>
+          <h2>Uma conversa real.<br><span>Sem simular interação.</span></h2>
+          <p>A captura abaixo documenta a interface de conversa do Bartho. Nesta página, ela é apresentada como imagem estática para mostrar a experiência visual do protótipo — não existe chat ativo conectado ao modelo.</p>
+          <div class="experience-points">
+            <p><span>✓</span> Interface de conversa como ponto de contato</p>
+            <p><span>✓</span> Personagem e identidade visual reconhecíveis</p>
+            <p><span>✓</span> Demonstração fiel ao material do projeto</p>
+          </div>
+          <span class="static-label"><span></span> DEMONSTRAÇÃO ESTÁTICA</span>
+        </div>
+        <figure class="conversation-frame">
+          <div class="frame-bar"><span></span><span></span><span></span><p>Experiência do Bartho · Clínica Bem</p></div>
+          <img src="assets/bartho-conversa.png" alt="Captura de tela da conversa do assistente virtual Bartho">
+          <figcaption>Captura de tela do protótipo original. A imagem não representa uma sessão ao vivo.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="architecture-section" id="arquitetura">
+      <div class="section-shell">
+        <div class="section-heading section-heading-light">
+          <p class="eyebrow eyebrow-light">06 / ARQUITETURA E TECNOLOGIA</p>
+          <h2>O modelo é uma parte<br><span>do sistema, não o sistema inteiro.</span></h2>
+          <p>O protótipo separa interpretação, lógica de aplicação e persistência. A confiabilidade depende da forma como esses componentes se conectam.</p>
+        </div>
+        <div class="architecture-flow">
+          <div class="architecture-step"><span>01</span><strong>Interface web</strong><small>HTML · CSS · JavaScript</small></div><b>→</b>
+          <div class="architecture-step"><span>02</span><strong>Backend / API</strong><small>Python · Flask</small></div><b>→</b>
+          <div class="architecture-step"><span>03</span><strong>Interpretação</strong><small>Qwen · Ollama</small></div>
+          <div class="architecture-branch"><span>↙</span><span>↘</span></div>
+          <div class="architecture-step architecture-secondary"><span>04</span><strong>Contexto e memória</strong><small>Estado da conversa · recuperação</small></div>
+          <div class="architecture-step architecture-secondary"><span>05</span><strong>Dados e regras</strong><small>SQLite · funções da aplicação</small></div>
+        </div>
+        <div class="tech-cards">
+          <article><span class="tech-label">MODELO</span><h3>Qwen + Ollama</h3><p>Modelo de linguagem executado localmente no ambiente de desenvolvimento para interpretar mensagens.</p></article>
+          <article><span class="tech-label">APLICAÇÃO</span><h3>Python + Flask</h3><p>Backend responsável por receber solicitações, coordenar os fluxos e aplicar as regras implementadas.</p></article>
+          <article><span class="tech-label">PERSISTÊNCIA</span><h3>SQLite</h3><p>Banco utilizado pelo protótipo para armazenar os dados previstos na implementação.</p></article>
+          <article><span class="tech-label">INTERFACE</span><h3>HTML, CSS e JavaScript</h3><p>Camada visual para apresentar a experiência de conversa e enviar mensagens à API.</p></article>
+        </div>
+        <p class="architecture-footnote">Diagrama conceitual baseado na arquitetura descrita no case. Ele não implica que todas as integrações estejam atualmente publicadas ou operacionais.</p>
+      </div>
+    </section>
+
+    <section class="content-section section-shell" id="desafios">
+      <div class="section-heading">
+        <p class="eyebrow">07 / DESAFIOS E DECISÕES</p>
+        <h2>Fazer a IA funcionar é só parte<br><span>do desafio de produto.</span></h2>
+        <p>O desenvolvimento revelou desafios de integração e confiabilidade que não podem ser resolvidos apenas com um modelo mais capaz.</p>
+      </div>
+      <div class="challenge-list">
+        <article><span class="challenge-number">01</span><div><h3>Integração entre componentes</h3><p>Garantir que interface, API, modelo e banco troquem informações de forma consistente.</p></div><span class="challenge-arrow">↗</span></article>
+        <article><span class="challenge-number">02</span><div><h3>Respostas inesperadas</h3><p>Testar diferentes formas de pedir a mesma coisa e ajustar instruções, validações e regras.</p></div><span class="challenge-arrow">↗</span></article>
+        <article><span class="challenge-number">03</span><div><h3>Limites da informação</h3><p>Tratar dados ausentes e disponibilidade sem afirmar que uma ação ocorreu quando ela não foi confirmada.</p></div><span class="challenge-arrow">↗</span></article>
+        <article><span class="challenge-number">04</span><div><h3>Validação ponta a ponta</h3><p>Testar a jornada completa, e não apenas chamadas isoladas, para encontrar inconsistências entre interface e API.</p></div><span class="challenge-arrow">↗</span></article>
+      </div>
+      <div class="decision-box"><span class="decision-mark">!</span><div><strong>Decisão central</strong><p>Priorizar regras explícitas e validação do fluxo em vez de confiar somente na resposta gerada pelo modelo.</p></div></div>
+    </section>
+
+    <section class="validation-section" id="validacao">
+      <div class="section-shell validation-layout">
+        <div>
+          <p class="eyebrow">08 / VALIDAÇÃO EXPLORATÓRIA</p>
+          <h2>O que os testes<br><span>ajudaram a observar.</span></h2>
+          <p>Na rodada exploratória registrada no portfólio, 17 de 20 participantes concluíram a jornada sem intervenção humana.</p>
+          <p class="validation-disclaimer">Esse resultado descreve uma rodada exploratória do MVP. Não é uma taxa de desempenho em produção e não deve ser generalizado para todos os cenários.</p>
+        </div>
+        <div class="metric-card">
+          <div class="metric-main"><strong>85<span>%</span></strong><p>resolução autônoma observada<br><small>na rodada exploratória</small></p></div>
+          <div class="metric-bar"><span></span></div>
+          <div class="metric-breakdown"><div><strong>17/20</strong><span>concluíram sem intervenção</span></div><div><strong>3/20</strong><span>não concluíram autonomamente</span></div></div>
+          <div class="metric-context"><strong>Cenários explorados</strong><p>Disponibilidade, agendamento, remarcação, cancelamento, informações administrativas, contexto, recuperação de informações e situações fora do escopo.</p></div>
+        </div>
+      </div>
+      <div class="section-shell metrics-next">
+        <p class="eyebrow">PRÓXIMAS MÉTRICAS</p>
+        <div class="metrics-next-grid">
+          <div><span>01</span><strong>Conclusão correta</strong><p>A jornada foi concluída com dados e regras corretos?</p></div>
+          <div><span>02</span><strong>Intervenção humana</strong><p>Em quantos casos foi necessário assumir o atendimento?</p></div>
+          <div><span>03</span><strong>Abandono e falhas</strong><p>Onde as pessoas desistem ou as ferramentas falham?</p></div>
+          <div><span>04</span><strong>Tempo de resposta</strong><p>Quanto tempo leva para resolver a solicitação?</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="learning-section" id="aprendizados">
+      <div class="section-shell learning-layout">
+        <div>
+          <p class="eyebrow eyebrow-light">09 / EVOLUÇÃO E APRENDIZADOS</p>
+          <h2>Construir. Testar.<br><span>Aprender. Evoluir.</span></h2>
+          <p>O desenvolvimento do Bartho aconteceu em ciclos de construção, expansão dos fluxos, testes e correções. Cada etapa trouxe novas perguntas sobre consistência e confiabilidade.</p>
+        </div>
+        <div class="learning-timeline">
+          <article><span>01</span><div><h3>Construção do MVP</h3><p>Estruturar interface, backend, modelo local e banco de dados para as primeiras jornadas.</p></div></article>
+          <article><span>02</span><div><h3>Expansão dos fluxos</h3><p>Ampliar as solicitações atendidas e detalhar as regras para diferentes cenários.</p></div></article>
+          <article><span>03</span><div><h3>Testes e correções</h3><p>Investigar interpretações incorretas e ajustar fluxos e validações a partir dos problemas encontrados.</p></div></article>
+          <article><span>04</span><div><h3>Próximo ciclo: confiabilidade</h3><p>Repetir cenários equivalentes de ponta a ponta, corrigir inconsistências e medir os resultados com critérios claros.</p></div></article>
+        </div>
+      </div>
+      <div class="section-shell closing-statement">
+        <span class="closing-star">✳</span>
+        <p>IA útil não é só a que conversa bem.<br><strong>É a que ajuda a concluir a tarefa certa, com consistência.</strong></p>
+        <a href="#inicio" class="back-top">Voltar ao início ↑</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-shell footer-inner"><a class="brand brand-footer" href="#inicio"><span class="brand-mark">B<span>.</span></span><span>Bartho <small>CASE DE PRODUTO</small></span></a><p>Case de produto digital · IA aplicada · Clínica Bem</p><span>© <span id="year"></span> · Protótipo exploratório</span></div>
+  </footer>
+</body>
+</html>
